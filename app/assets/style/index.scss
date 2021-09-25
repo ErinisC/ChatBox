@@ -1,0 +1,24 @@
+.secondaryBg{
+    background-color: $secondary;
+    width: 100vw;
+    height: 50vh;
+    h1{
+        font-size: $font-xl;
+        text-align: center;
+        color: $dark;
+        padding-top: 48px;
+    }
+}
+
+.loginBox{
+    max-width: 50%;
+    background-color: $primary;
+    border-radius: 20px;
+    margin-top: 54px;
+    text-align: center;
+    padding: 2.25rem 0 ;
+}
+
+.loginForm{
+
+}

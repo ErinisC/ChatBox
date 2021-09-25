@@ -1,0 +1,14 @@
+// w: 1280 ~ 3640
+// h: 760 ~ 2160
+
+// @mixin 4Kdesktop {
+//     @media (max-width: 3640px){
+//         @content
+//     }
+// };
+
+@mixin desktop {
+    @media (max-width: 1280px){
+        @content
+    }
+};

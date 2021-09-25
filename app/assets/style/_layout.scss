@@ -1,0 +1,13 @@
+nav{
+    background-color: $dark;
+    height: 38px;
+}
+
+.signal{
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: $success;
+    float: right;
+    margin: 0.5rem 0.5rem 0 0;
+}

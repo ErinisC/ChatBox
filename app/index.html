@@ -1,12 +1,33 @@
 ---
-title: 首頁
+title: Login Page 登入頁
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<h1>
-  這是一段話
-</h1>
+<section>
+   <div class="secondaryBg">
+      <div class="container">
+         <h1>Welcome to Chat Box</h1>
+         <div class="loginBox">
+            <h2>LET'S SIGN IN</h2>
+            <form action="" class="loginForm">
+               <div>
+                  <label for=""><i class="fas fa-user"></i></label>
+                  <input type="text" value="ID">
+               </div>
+               <div>
+                  <label for=""><i class="fas fa-lock"></i></label>
+                  <input type="password" value="Password">
+               </div>
+               <input type="submit" value="LOGIN">
+            </form>
+         </div>
+      </div>
+   </div>
+   
+
+   </div>
+</section>
 
 <div class="box"></div>
