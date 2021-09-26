@@ -11,10 +11,10 @@
 }
 
 .loginBox{
-    max-width: 50%;
+    width: 50%;
     background-color: $primary;
     border-radius: 20px;
-    margin-top: 54px;
+    margin-top: 3.375rem;
     text-align: center;
     padding: 2.25rem 0 ;
     h2{
@@ -44,8 +44,31 @@
 
 .loginBtn{
     height: 69px;
-    width: 20%;
+    width: 30%;
     border-radius: 35px;
     background-color: $dark;
     color:$light;
+    cursor: pointer;
+    border: 0 none;
+    font-size: $font-m;
+}
+
+.loginImg{
+    width: 38%;
+    margin-left: 72px;
+    margin-top: 3.375rem;
+    h2{
+        font-size: $font-m;
+        color:$primary;
+        margin-top: 3rem;
+    }
+    h3{
+        font-size: $font-m;
+
+        margin-top: 1rem;
+        margin-left: 6.5rem;
+        a{
+        color:$danger;
+        }
+    }
 }
