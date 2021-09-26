@@ -175,6 +175,32 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 54px;
   text-align: center;
   padding: 2.25rem 0; }
+  .loginBox h2 {
+    font-size: 32px;
+    color: #535D71;
+    margin-bottom: 24px; }
+
+.loginForm label i {
+  font-size: 43px;
+  padding-top: 5px; }
+
+.loginForm input {
+  width: 66%;
+  height: 69px;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  color: #928f8f; }
+
+.loginBtn {
+  height: 69px;
+  width: 20%;
+  border-radius: 35px;
+  background-color: #535D71;
+  color: #F6EFE2; }
 
 nav {
   background-color: #535D71;
