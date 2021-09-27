@@ -4,24 +4,43 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
-<div class="container">
-  <div class="row">
-    <div class="chatBox">
-      <div class="chatTop">
-
+<div class="chatboxBg">
+  <div class="container">
+    <div class="row">
+      <div class="wrap d-flex">
+        <div class="chatBox">
+          <div class="chatTop d-flex">
+            <div class="logOut ml-1 mt-1">
+              <a href="index.html"><img src="./assets/images/SVG/logout.svg" alt=""></a>
+            </div>
+            <div class="groupName">Hex_Work Team<span>(3)</span></div>
+          </div>
+          <div class="chatBody"></div>
+          <div class="chatBottom d-flex">
+            <div class="userAvatar ml-1">
+              <!-- <img src="./assets/images/avatar (3).png" alt=""> -->
+            </div>
+            <input class="msgContent pl-2" type="text" placeholder="Say Somthing...">
+            <input class="sendMsg mr-1" type="submit" value="Submit">
+          </div>
+        </div>
+        <div class="moveBox">
+          <div class="left">
+            <a href="#" ><img src="./assets/images/SVG/left.svg" alt=""></a>
+          </div>
+          <div class="up">
+            <a href="#" ><img src="./assets/images/SVG/up.svg" alt=""></a>
+          </div>
+          <div class="down">
+            <a href="#" ><img src="./assets/images/SVG/down.svg" alt=""></a>
+          </div>
+          <div class="right">
+            <a href="#" ><img src="./assets/images/SVG/right.svg" alt=""></a>
+          </div>
+          
+          
+        </div>
       </div>
-      <div class="chatBottom">
-
-      </div>
-    </div>
-    <div class="moveBox">
-      <button><i class="fas fa-caret-up"></i></button>
-      <button><i class="fas fa-caret-right"></i></button>
-      <button><i class="fas fa-caret-down"></i></button>
-      <button><i class="fas fa-caret-left"></i></button>
     </div>
   </div>
 </div>
-
-<div class="box"></div>

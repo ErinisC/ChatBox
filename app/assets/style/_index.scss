@@ -4,6 +4,7 @@
     height: 50vh;
     h1{
         font-size: $font-xl;
+        font-weight: $font-bolder;
         text-align: center;
         color: $dark;
         padding-top: 48px;
@@ -19,6 +20,7 @@
     padding: 2.25rem 0 ;
     h2{
         font-size: $font-lg;
+        font-weight: $font-bold;
         color: $dark;
         margin-bottom: 24px;
     };
