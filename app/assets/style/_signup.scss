@@ -1,6 +1,6 @@
 .signUpBgc{
     background-color: $light;
-    padding-bottom: 4.8rem;
+    padding-bottom: 2.9rem;
 }
 
 .signUpTitle{
@@ -10,10 +10,11 @@
 }
 
 .signUpBox{
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     background-color: $info;
     border-radius: 20px;
-    padding: 1.2rem 4.3rem;
+    padding: 2rem 4.3rem;
     .signUpForm{
         width: 40%;
         label{
@@ -23,7 +24,7 @@
             color: $dark;
         }
         input{
-            width: 80%;
+            width: 85%;
             height: 49px;
             margin-bottom: 1.3rem;
             border: none;
@@ -38,7 +39,7 @@
             padding-bottom: .2rem;
         }
         .reminder{
-            width: 80%;
+            width: 85%;
             background-color: $warning;
             border-radius: 10px;
             font-size: .8rem;
@@ -50,7 +51,7 @@
     }
 }
 .avatarSec{
-    padding-left: 5rem;
+    padding-left: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +59,7 @@
         border-radius: 50%;
         padding: 3rem;
         background-color: #fff;
-        width: 65%;
+        width: 55%;
         height: 49%;
         text-align: center;
         display: flex;
@@ -68,12 +69,28 @@
         cursor: pointer;
     }
     .avatarCarousel{
+        position: relative;
         margin: 2rem 0;
+        background-color: $light;
+        padding:1rem 1.8rem;
+        border-radius: 10px;
+        width: 100%;
         img{
             width: 110px;
             height: 100px;
             border-radius: 10px;
-            margin-right: .5rem;
+            margin-right: .3rem;
+        }
+        .arrow{
+        position: absolute;
+        right: -2rem;
+        bottom: 25%;
+        font-size: 38px;
+        color: $dark;
+        border-radius: 50%;
+        background-color: $danger;
+        padding: 0 .7rem;
+        cursor: pointer;
         }
     }
 }
@@ -81,10 +98,10 @@
 
 .signUpBtn{
     height: 60px;
-    width: 42%;
+    width: 35%;
     border-radius: 35px;
     background-color: $dark;
-    color:$light;
+    color: $light;
     cursor: pointer;
     border: 0 none;
     font-size: $font-sm;
