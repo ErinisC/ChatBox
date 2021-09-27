@@ -26,8 +26,8 @@
       <div class="wrap d-flex">
         <div class="chatBox">
           <div class="chatTop d-flex">
-            <div class="logOut ml-1 mt-1">
-              <a href="index.html"><img src="./assets/images/SVG/logout.svg" alt=""></a>
+            <div class="logOut ml-1 mt-1" id="logoutBtn">
+              <a href="#"><img src="./assets/images/SVG/logout.svg" alt=""></a>
             </div>
             <div class="groupName">Hex_Work Team<span>(3)</span></div>
           </div>
@@ -53,11 +53,19 @@
           <div class="right">
             <a href="#" ><img src="./assets/images/SVG/right.svg" alt=""></a>
           </div>
-          
-          
+  
         </div>
       </div>
     </div>
+  </div>
+  
+  <!-- 黑色遮罩 -->
+  <div class="blackOverlay" id="blackOverlay"></div>
+  <!-- Logout Confirm Modal -->
+  <div class="logoutConfirm" id="logoutConfirm">
+    <h3>Are you sure<br> you want to Logout?</h3>
+    <a class="yes mr-2" id="confirmBtn" href="index.html">YES</a>
+    <a class="no" href="chatbox.html" id="close">NO</a>
   </div>
 </div>
 
