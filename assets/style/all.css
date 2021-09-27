@@ -358,15 +358,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 2rem;
   height: 100vh; }
 
-* {
-  outline: 1px solid red; }
-
 .wrap {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
 .chatBox {
-  width: 42%;
+  width: 43%;
   height: 88vh;
   position: relative;
   border: 5px dashed #535D71; }
@@ -420,17 +417,42 @@ h1, h2, h3, h4, h5, h6 {
       color: #F6EFE2;
       font-size: 16px;
       cursor: pointer; }
-  .chatBox .moveBox {
-    position: relative; }
-    .chatBox .moveBox .left {
-      position: absolute;
-      bottom: 0; }
-    .chatBox .moveBox .up {
-      position: absolute; }
-    .chatBox .moveBox .down {
-      position: absolute; }
-    .chatBox .moveBox .right {
-      position: absolute; }
+
+.moveBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  background-image: url(../images/brick-wall-185082_1920.jpg);
+  background-size: contain;
+  background-position: center center;
+  width: 48%;
+  height: 88vh;
+  border: 5px solid #535D71; }
+  .moveBox .left {
+    position: absolute;
+    bottom: 11%;
+    left: 28%;
+    width: 4rem; }
+  .moveBox .up {
+    position: absolute;
+    bottom: 20%;
+    left: 43%;
+    width: 4rem; }
+  .moveBox .down {
+    position: absolute;
+    bottom: 3%;
+    left: 43%;
+    width: 4rem; }
+  .moveBox .right {
+    position: absolute;
+    bottom: 11%;
+    right: 28%;
+    width: 4rem; }
 
 nav {
   background-color: #535D71;
