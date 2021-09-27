@@ -7,34 +7,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ChatBox 聊天室/角色區</title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- 引入 fontawesome -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- 引入字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
   <nav class=""><div class="signal"></div></nav>
 
-  
-<div class="container">
-  <div class="row">
-    <div class="chatBox">
-      <div class="chatTop">
-
+  <div class="chatboxBg">
+  <div class="container">
+    <div class="row">
+      <div class="wrap d-flex">
+        <div class="chatBox">
+          <div class="chatTop d-flex">
+            <div class="logOut ml-1 mt-1">
+              <a href="index.html"><img src="./assets/images/SVG/logout.svg" alt=""></a>
+            </div>
+            <div class="groupName">Hex_Work Team<span>(3)</span></div>
+          </div>
+          <div class="chatBody"></div>
+          <div class="chatBottom d-flex">
+            <div class="userAvatar ml-1">
+              <!-- <img src="./assets/images/avatar (3).png" alt=""> -->
+            </div>
+            <input class="msgContent pl-2" type="text" placeholder="Say Somthing...">
+            <input class="sendMsg mr-1" type="submit" value="Submit">
+          </div>
+        </div>
+        <div class="moveBox">
+          <a href="#" class="left"><img src="./assets/images/SVG/left.svg" alt=""></a>
+          <a href="#" class="up"><img src="./assets/images/SVG/up.svg" alt=""></a>
+          <a href="#" class="down"><img src="./assets/images/SVG/down.svg" alt=""></a>
+          <a href="#" class="right"><img src="./assets/images/SVG/right.svg" alt=""></a>
+        </div>
       </div>
-      <div class="chatBottom">
-
-      </div>
-    </div>
-    <div class="moveBox">
-      <button><i class="fas fa-caret-up"></i></button>
-      <button><i class="fas fa-caret-right"></i></button>
-      <button><i class="fas fa-caret-down"></i></button>
-      <button><i class="fas fa-caret-left"></i></button>
     </div>
   </div>
 </div>
-
-<div class="box"></div>
 
   <footer class="footer"></footer>
   <script src="./assets/js/vendors.js"></script>
