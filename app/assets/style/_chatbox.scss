@@ -33,10 +33,7 @@
             font-weight: $font-bold;
         }
     }
-    .chatBody{
-        background-color: $light;
-        height: 67vh;
-    }
+    
     .chatBottom{
         position: absolute;
         bottom: 0;
@@ -46,10 +43,8 @@
         align-items: center;
         justify-content: space-around;
         .userAvatar {
-            border-radius: 50%;
             width: 50px;
             height: 50px;
-            background-color: #ffff;
         }
         .msgContent{
             border-radius: 15px;
@@ -70,40 +65,103 @@
 
     }
 }
+
+// chatBody 聊天框
+.chatBody{
+    background-color: $light;
+    height: 67vh;
+    color:$dark;
+    font-weight: $font-bold;
+    .user{
+        align-items: center;
+        float: right;
+        clear: both;
+        width: 65%;
+        .userWord{
+            background-color: $secondary;
+            padding: .8rem 1rem;
+            border-radius: 26px;
+        }
+    }
+    .others{
+        float: left;
+        clear: both;
+        width: 78%;
+        align-items: center;
+        .othersAvatar{
+            width: 40px;
+            height: 40px;
+        }
+        
+        .othersWord{
+            background-color: $success;
+            padding: .8rem 1rem;
+            border-radius: 26px;
+        }
+    }
+}
+
+
     
+
+// 虛擬角色移動區
 .moveBox{
-    display: flex;
-    flex-direction: row;
+    padding: .8rem;
     position: relative;
     background-image: url(../images/brick-wall-185082_1920.jpg);
     background-size: contain;
-    background-position: center center;
     width: 48%;
     height: 88vh;
     border: 5px solid $dark;
+    color:$dark;
+    font-weight: bold;
+    font-size: $font-xs;
+    .moveAvatarUser{
+        margin: .8rem 1.2rem;
+        display: inline-block;
+        img{
+            width: 62px;
+            height: 62x;
+        }
+        .userName{
+            text-align: center;
+        }
+    }
+    .moveAvatarOthers{
+        margin: .8rem 1.2rem;
+        display: inline-block;
+        img{
+            width: 62px;
+            height: 62px;
+        }
+        .othersName{
+           text-align: center;
+        }
+    }
+
     .left{
         position: absolute;
-        bottom: 11%;
-        left: 28%;
-        width: 4rem;
+        bottom: 10%;
+        left: 32%;
+        width: 3.5rem;
     }
     .up{
         position: absolute;
-        bottom: 20%; 
+        bottom: 18%; 
         left: 43%;
-        width: 4rem;
+        width: 3.5rem;
     }
     .down{
         position: absolute;
         bottom: 3%;
         left: 43%;
-        width: 4rem;
+        width: 3.5rem;
     }
     .right{
         position: absolute;
-        bottom: 11%; 
-        right: 28% ;
-        width: 4rem;
+        bottom: 10%; 
+        right: 33% ;
+        width: 3.5rem;
     }
 }
 
