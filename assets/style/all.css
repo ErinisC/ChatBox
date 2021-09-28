@@ -476,7 +476,7 @@ h1, h2, h3, h4, h5, h6 {
       border-radius: 26px; }
 
 .moveBox {
-  padding: .8rem;
+  padding: 1rem;
   position: relative;
   background-image: url(../images/brick-wall-185082_1920.jpg);
   background-size: contain;
