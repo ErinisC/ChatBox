@@ -13,11 +13,21 @@ current: index
             <div class="logOut ml-1 mt-1" id="logoutBtn">
               <a href="#"><img src="./assets/images/SVG/logout.svg" alt=""></a>
             </div>
-            <div class="groupName">Hex_Work Team<span>(3)</span></div>
+            <!-- 群組名稱 -->
+            <div id="groupName" class="groupName">Hex_Work Team<span>(3)</span></div>
           </div>
+          <!-- 變更群組名稱輸入框 -->
+          <div id="changeName" class="changeName">
+            <div class="changeNameInput ml-2">Hex_Group</div>
+            <div id="cancelBtn" class="cancelBtn">
+              <img src="./assets/images/SVG/cancelBtn.svg" alt="">
+            </div>
+          </div>
+
+          <!-- 聊天室主體 -->
           <div class="chatBody">
             <div class="user mt-2 mr-2 d-flex">
-              <div><i class="fas fa-exclamation-circle"></i></div>
+              <div class="sendMsgFail"><i class="fas fa-exclamation-circle"></i></div>
               <div class="userWord ml-1">Hi, Frank. Where are you? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe sequi optio praeserovident vero incidunt?</div>
             </div>
             <div class="others d-flex ml-2 mt-2">
@@ -26,7 +36,7 @@ current: index
                 <div class="othersName">Frank</div>
               </div>
               <div class="othersWord mr-1">I’m at the office. Lorem ipsum dolor sit, amet consectetug elit. Id temporibus coniquam nemo dint ciis doloremque veritatis laboriosam esse. Sequi, quo ratione.</div>
-              <div><i class="fas fa-exclamation-circle"></i></div>
+              <div class="sendMsgFail"><i class="fas fa-exclamation-circle"></i></div>
             </div>
           </div>
           <div class="chatBottom d-flex">

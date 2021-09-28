@@ -4,10 +4,6 @@
     height: 100vh;
 }
 
-// *{
-//     outline: 1px solid red;
-// }
-
 .wrap{
     justify-content: space-around;
 }
@@ -31,6 +27,24 @@
             align-items: center;
             font-size: $font-m;
             font-weight: $font-bold;
+        }
+    }
+    .changeName{
+        display: none;
+        width: 100%;
+        height: 8%;
+        background-color: #fff;
+        align-items: center;
+        .changeNameInput{
+            float:left;
+            font-size: $font-xs;
+            color:#C7C0BF;
+            margin: .7rem;
+        }
+        .cancelBtn{
+            float:right;
+            margin: .7rem;
+            width: 6%;
         }
     }
     
@@ -106,7 +120,7 @@
 
 // 虛擬角色移動區
 .moveBox{
-    padding: .8rem;
+    padding: 1rem;
     position: relative;
     background-image: url(../images/brick-wall-185082_1920.jpg);
     background-size: contain;
