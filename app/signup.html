@@ -33,18 +33,43 @@ current: index
             </div>
           </div>
           <div class="avatarSec">
-            <div class="avatar">Select your Avatar</div>
-            <div class="avatarCarousel d-flex">
-              <img src="./assets/images/avatar.png" alt="">
-              <img src="./assets/images/avatar (5).png" alt="">
-              <img src="./assets/images/avatar (3).png" alt="">
-              <img src="./assets/images/avatar (2).png" alt="">
-              <img src="./assets/images/avatar (4).png" alt="">
-              <img src="./assets/images/avatar (1).png" alt="">
+            <div class="avatar">
+              <img id="avatar1" src="./assets/images/avatar.png" alt="">
+              <img id="avatar2" src="./assets/images/avatar (2)" alt="">
+              <img id="avatar3" src="./assets/images/avatar (3)" alt="">
+              <img id="avatar4" src="./assets/images/avatar (4)" alt="">
             </div>
-            <div class="arrow">
+            <div class="avatarCarousel">
+              <div class="itemWrap d-flex">
+                <a href="#" class="item"><img id="img1" src="./assets/images/avatar.png" alt=""></a>
+                <a href="#" class="item"><img id="img2" src="./assets/images/avatar (2).png" alt=""></a>
+                <a href="#" class="item"><img id="img3" src="./assets/images/avatar (5).png" alt=""></a>
+                <a href="#" class="item"><img id="img4" src="./assets/images/avatar (3).png" alt=""></a>
+              </div>
+            </div>
+
+            <!-- 隱藏狀態的頭貼 -->
+            <div id="imgs">
+              <img src="./assets/images/avatar.png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (2).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (3).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar.png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (5).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (1).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (2).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (3).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (4).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (5).png" alt="" style="display:none;">
+            </div>
+
+            <!-- 箭頭 -->
+            <div id="rightArrow" class="rightArrow">
               <i class="fas fa-arrow-right"></i>
             </div>
+            <div id="leftArrow" class="leftArrow">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <!-- 註冊按鈕 -->
             <input type="submit" value="SIGN UP" class="signUpBtn">
           </div>
         
