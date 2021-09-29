@@ -353,14 +353,14 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px;
     width: 430px;
     overflow: hidden; }
-    .avatarSec .avatarCarousel ul {
-      overflow: hidden; }
-      .avatarSec .avatarCarousel ul li {
-        margin-right: .5rem; }
-        .avatarSec .avatarCarousel ul li img {
-          width: 110px;
-          height: 100px;
-          border-radius: 10px; }
+    .avatarSec .avatarCarousel .item img {
+      margin-right: .5rem;
+      width: 110px;
+      height: 100px;
+      border-radius: 10px; }
+    .avatarSec .avatarCarousel .item:hover {
+      border-radius: 15px;
+      border: 3px solid #EF8062; }
   .avatarSec .rightArrow {
     position: absolute;
     right: -2rem;

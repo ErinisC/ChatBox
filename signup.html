@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
-
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -50,24 +50,42 @@
           </div>
           <div class="avatarSec">
             <div class="avatar">
-              <img src="./assets/images/avatar.png" alt="">
+              <img id="avatar1" src="./assets/images/avatar.png" alt="">
+              <img id="avatar2" src="./assets/images/avatar (2)" alt="">
+              <img id="avatar3" src="./assets/images/avatar (3)" alt="">
+              <img id="avatar4" src="./assets/images/avatar (4)" alt="">
             </div>
             <div class="avatarCarousel">
-              <ul class="d-flex">
-                <li class="item"><a href="#"><img src="./assets/images/avatar.png" alt=""></a></li>
-                <li class="item"><a href="#"><img src="./assets/images/avatar (2).png" alt=""></a></li>
-                <li class="item"><a href="#"><img src="./assets/images/avatar (5).png" alt=""></a></li>
-                <li class="item"><a href="#"><img src="./assets/images/avatar (3).png" alt=""></a></li>
-                <li class="item"><a href="#"><img src="./assets/images/avatar (1).png" alt=""></a></li>
-                <li class="item"><a href="#"><img src="./assets/images/avatar (4).png" alt=""></a></li>
-              </ul>
+              <div class="itemWrap d-flex">
+                <a href="#" class="item"><img id="img1" src="./assets/images/avatar.png" alt=""></a>
+                <a href="#" class="item"><img id="img2" src="./assets/images/avatar (2).png" alt=""></a>
+                <a href="#" class="item"><img id="img3" src="./assets/images/avatar (5).png" alt=""></a>
+                <a href="#" class="item"><img id="img4" src="./assets/images/avatar (3).png" alt=""></a>
+              </div>
             </div>
-            <div class="rightArrow">
+
+            <!-- 隱藏狀態的頭貼 -->
+            <div id="imgs">
+              <img src="./assets/images/avatar.png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (2).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (3).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar.png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (5).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (1).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (2).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (3).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (4).png" alt="" style="display:none;">
+              <img src="./assets/images/avatar (5).png" alt="" style="display:none;">
+            </div>
+
+            <!-- 箭頭 -->
+            <div id="rightArrow" class="rightArrow">
               <i class="fas fa-arrow-right"></i>
             </div>
-            <div class="leftArrow">
+            <div id="leftArrow" class="leftArrow">
               <i class="fas fa-arrow-left"></i>
             </div>
+            <!-- 註冊按鈕 -->
             <input type="submit" value="SIGN UP" class="signUpBtn">
           </div>
         
