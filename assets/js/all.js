@@ -51,11 +51,10 @@ $(function () {
     var imgSrc = $(this).attr("id").substr(3);
     $(".previewAvatar").attr("src", "./assets/images/avatar" + imgSrc + '.png');
   });
-}); //                      index
-// [1]  [2] [3] [4]     
-// 1    2   3   4       0
-// 5   6   7   8       1 * 4
-// 9   10   11   12       2 * 4
+}); // [1] [2] [3] [4]     [index]
+//  1   2   3   4         0
+//  5   6   7   8       1 * 4
+//  9   10  11  12      2 * 4
 "use strict";
 
 var groupName = document.getElementById('groupName');

@@ -58,8 +58,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
-  border-radius: 50%; }
+  vertical-align: middle; }
 
 .container {
   max-width: 1004px;
@@ -341,25 +340,39 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   position: relative; }
   .avatarSec .avatar {
-    border-radius: 50%;
-    width: 50%;
-    height: 50%; }
+    text-align: center; }
     .avatarSec .avatar img {
-      width: 100%; }
+      border-radius: 50%;
+      width: 50%; }
   .avatarSec .avatarCarousel {
     margin: 2rem 0;
+    padding: 1rem 1.2rem;
     background-color: #F6EFE2;
-    padding: 1rem 1.3rem;
     border-radius: 10px;
-    width: 430px; }
-    .avatarSec .avatarCarousel .itemWrap .item img {
-      margin-right: .5rem;
-      width: 110px;
-      height: 100px;
-      border-radius: 10px; }
-    .avatarSec .avatarCarousel .itemWrap .item:hover {
-      border-radius: 15px;
-      border: 4px solid #EF8062; }
+    width: 430px;
+    height: 130px;
+    overflow: hidden; }
+    .avatarSec .avatarCarousel .itemWrap {
+      height: 10px;
+      margin-left: 0px; }
+      .avatarSec .avatarCarousel .itemWrap .page1 {
+        margin-left: 0px; }
+      .avatarSec .avatarCarousel .itemWrap .page2 {
+        margin-left: -400px; }
+      .avatarSec .avatarCarousel .itemWrap .page3 {
+        margin-left: -800px; }
+      .avatarSec .avatarCarousel .itemWrap .item {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: .5rem;
+        border-radius: 15px; }
+        .avatarSec .avatarCarousel .itemWrap .item img {
+          width: 110px;
+          height: 100px; }
+        .avatarSec .avatarCarousel .itemWrap .item:hover {
+          border-radius: 15px;
+          border: 4px solid #EF8062; }
   .avatarSec .rightArrow {
     position: absolute;
     right: -2rem;
@@ -454,9 +467,10 @@ h1, h2, h3, h4, h5, h6 {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .chatBox .chatBottom .userAvatar {
+    .chatBox .chatBottom .userAvatar img {
       width: 50px;
-      height: 50px; }
+      height: 50px;
+      border-radius: 50%; }
     .chatBox .chatBottom .msgContent {
       border-radius: 15px;
       height: 63%;
@@ -495,9 +509,10 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .chatBody .others .othersAvatar {
+    .chatBody .others .othersAvatar img {
       width: 40px;
-      height: 40px; }
+      height: 40px;
+      border-radius: 50%; }
     .chatBody .others .othersWord {
       background-color: #CCD39C;
       padding: .8rem 1rem;
@@ -519,7 +534,8 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block; }
     .moveBox .moveAvatarUser img {
       width: 62px;
-      height: 62x; }
+      height: 62x;
+      border-radius: 50%; }
     .moveBox .moveAvatarUser .userName {
       text-align: center; }
   .moveBox .moveAvatarOthers {
@@ -527,7 +543,8 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block; }
     .moveBox .moveAvatarOthers img {
       width: 62px;
-      height: 62px; }
+      height: 62px;
+      border-radius: 50%; }
     .moveBox .moveAvatarOthers .othersName {
       text-align: center; }
   .moveBox .left {
