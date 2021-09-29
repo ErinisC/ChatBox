@@ -30,35 +30,41 @@ $("#rightArrow").click(function() {
   } else {  
     for(var j = 0; j < displayLength; j++) {  
 
-      $("#img" + j).attr("src",images[j + 1 + index].src);
+      $("#img" + j).attr("src",images[j +  index * displayLength].src);
     }
     index++;
     }
   })
+
+
+let NUM_PIC_PER_ROW = 4;
+
+ // Events
+
+  $(".itemWrap img").on("mouseenter", function(){
+
+    var imgSrc = $(this).attr("id").substr(3);
+
+    var finalSrc = parseInt(imgSrc) + index * NUM_PIC_PER_ROW;
+    console.log('index:' + index);
+    console.log('imgSrc:' + imgSrc);
+    console.log('FinalSrc:' + finalSrc);
+
+    $(".previewAvatar").attr("src", "./assets/images/avatar" + finalSrc  +'.png');
+})
+
+$("#imgs img").on("mouseenter", function(){
+    var imgSrc = $(this).attr("id").substr(3);
+    $(".previewAvatar").attr("src", "./assets/images/avatar" + imgSrc +'.png');
 })
 
 
-$(function(){
-    $(".itemWrap a").on('mouseenter', function(){
-        var imgSrc = $(this).find('img').attr('src');
-        $(this).siblings('a').find('avatar').attr('src', imgSrc);
-    })
-});
+})
 
 
-// $(document).ready(function(){
-//     $("#img1").click(function(){
-//           $("#avatar1").attr("src","./assets/images/avatar.png");
-//     });
-//     $("#img2").click(function(){
-//           $("#avatar2").attr("src","./assets/images/avatar (2)");
-//     });
-//     $("#img3").click(function(){
-//           $("#avatar3").attr("src","./assets/images/avatar (3)");
-//     });
-//     $("#img4").click(function(){
-//           $("#avatar4").attr("src","./assets/images/avatar (4)");
-//     });
-  
-// });
+//                      index
+// [1]  [2] [3] [4]     
+// 1    2   3   4       0
+// 5   6   7   8       1 * 4
+// 9   10   11   12       2 * 4
 
