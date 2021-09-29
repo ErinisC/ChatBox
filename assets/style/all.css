@@ -308,7 +308,9 @@ h1, h2, h3, h4, h5, h6 {
       border-radius: 10px;
       padding-left: 1rem;
       font-size: 1rem;
-      color: #928f8f; }
+      color: #928f8f;
+      -webkit-box-shadow: 1px 1px 2px #ccc;
+              box-shadow: 1px 1px 2px #ccc; }
     .signUpBox .signUpForm h3 {
       color: #F6EFE2;
       font-size: 20px;
@@ -318,11 +320,14 @@ h1, h2, h3, h4, h5, h6 {
       background-color: #EDCD8D;
       border-radius: 10px;
       font-size: .8rem;
-      padding: 1rem 1.5rem; }
+      padding: 1rem 1.5rem;
+      -webkit-box-shadow: 2px 2px 5px #aaa;
+              box-shadow: 2px 2px 5px #aaa; }
       .signUpBox .signUpForm .reminder p {
         color: #535D71; }
 
 .avatarSec {
+  width: 58%;
   padding-left: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,44 +342,49 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; }
   .avatarSec .avatar {
     border-radius: 50%;
-    padding: 3rem;
-    background-color: #fff;
-    width: 55%;
-    height: 49%;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #707070;
-    cursor: pointer; }
+    width: 50%;
+    height: 50%; }
+    .avatarSec .avatar img {
+      width: 100%; }
   .avatarSec .avatarCarousel {
     margin: 2rem 0;
     background-color: #F6EFE2;
     padding: 1rem 1.8rem;
     border-radius: 10px;
-    width: 400px;
+    width: 430px;
     overflow: hidden; }
-    .avatarSec .avatarCarousel img {
-      width: 110px;
-      height: 100px;
-      border-radius: 10px;
-      margin-right: .5rem; }
-  .avatarSec .arrow {
+    .avatarSec .avatarCarousel ul {
+      overflow: hidden; }
+      .avatarSec .avatarCarousel ul li {
+        margin-right: .5rem; }
+        .avatarSec .avatarCarousel ul li img {
+          width: 110px;
+          height: 100px;
+          border-radius: 10px; }
+  .avatarSec .rightArrow {
     position: absolute;
     right: -2rem;
     bottom: 25%;
     font-size: 38px;
     color: #535D71;
     border-radius: 50%;
-    background-color: #EF8062;
+    background-color: #E2C2C2;
     padding: 0 .7rem;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 2px #aaa;
+            box-shadow: 1px 1px 2px #aaa; }
+  .avatarSec .leftArrow {
+    position: absolute;
+    left: 1rem;
+    bottom: 25%;
+    font-size: 38px;
+    color: #535D71;
+    border-radius: 50%;
+    background-color: #E2C2C2;
+    padding: 0 .7rem;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 2px #aaa;
+            box-shadow: 1px 1px 2px #aaa; }
 
 .signUpBtn {
   height: 60px;

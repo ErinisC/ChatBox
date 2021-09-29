@@ -2,6 +2,7 @@
 
 console.log('hello');
 "use strict";
+"use strict";
 
 var groupName = document.getElementById('groupName');
 var changeName = document.getElementById('changeName');
