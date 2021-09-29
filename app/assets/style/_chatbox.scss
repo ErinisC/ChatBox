@@ -56,9 +56,10 @@
         height: 12%;
         align-items: center;
         justify-content: space-around;
-        .userAvatar {
+        .userAvatar img{
             width: 50px;
             height: 50px;
+            border-radius: 50%;
         }
         .msgContent{
             border-radius: 15px;
@@ -102,9 +103,10 @@
         clear: both;
         width: 78%;
         align-items: center;
-        .othersAvatar{
+        .othersAvatar img{
             width: 40px;
             height: 40px;
+            border-radius: 50%;
         }
         
         .othersWord{
@@ -136,6 +138,7 @@
         img{
             width: 62px;
             height: 62x;
+            border-radius: 50%;
         }
         .userName{
             text-align: center;
@@ -147,6 +150,7 @@
         img{
             width: 62px;
             height: 62px;
+            border-radius: 50%;
         }
         .othersName{
            text-align: center;
